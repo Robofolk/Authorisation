@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<ul>
+    <li>
+        <input type="button"
+               value="Assign Regulator role"
+               onclick="location.href='@Url.Action("SignInRegulator", "Home")'" />
+    </li>
+    <li>
+        <input type="button"
+               value="Assign Producer's Approved Person role"
+               onclick="location.href='@Url.Action("SignInProducerApprovedPerson", "Home")'" />
+    </li>
+    <li>
+        <input type="button"
+               value="Assign Producer's Admin role"
+               onclick="location.href='@Url.Action("SignInProducerAdmin", "Home")'" />
+    </li>
+</ul>
